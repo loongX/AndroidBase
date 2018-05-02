@@ -65,7 +65,7 @@ public class JsonUtilsTest {
 
     @Test
     public void getBoolean() throws Exception {
-        assertEquals("获取Json Boolean", JsonUtils.getBoolean(obj,"is_vip",false), true);
+        assertEquals("获取Json Boolean", JsonUtils.getBoolean(obj,"is_vip1",false), true);
     }
 
     @Test
