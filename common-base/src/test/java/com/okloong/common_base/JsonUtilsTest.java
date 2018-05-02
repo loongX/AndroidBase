@@ -70,10 +70,12 @@ public class JsonUtilsTest {
 
     @Test
     public void getInteger() throws Exception {
+        assertEquals("获取Json Integer", JsonUtils.getInteger(obj,"num",0), 100);
     }
 
     @Test
     public void getString() throws Exception {
+        assertEquals("获取Json String", JsonUtils.getString(obj,"name","null"), "foo");
     }
 
 }
