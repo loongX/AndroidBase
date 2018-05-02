@@ -25,6 +25,11 @@ public class HexUtils {
     public HexUtils() {
     }
 
+    /**
+     * 但字节转换成字符串
+     * @param b
+     * @return
+     */
     public static String byte2HexStr(byte b) {
         char[] buf = new char[]{'\u0000', digits[b & 15]};
         b = (byte)(b >>> 4);
@@ -32,6 +37,11 @@ public class HexUtils {
         return new String(buf);
     }
 
+    /**
+     * 字节转换成16进制字符串
+     * @param bytes
+     * @return
+     */
     public static String bytes2HexStr(byte[] bytes) {
         if(bytes != null && bytes.length != 0) {
             char[] buf = new char[2 * bytes.length];
@@ -49,16 +59,23 @@ public class HexUtils {
         }
     }
 
+    /**
+     * bcd字符扩展两倍到16进制字符串
+     * @param bytes
+     * @param offset  开始
+     * @param count   数量
+     * @return
+     */
     public static String bytes2HexStr(byte[] bytes, int offset, int count) {
-        if(bytes != null && bytes.length != 0) {
+          if(bytes != null && bytes.length != 0) {
             char[] buf = new char[2 * count];
             int size = offset + count;
 
-            for(int i = offset; i < size; ++i) {
+            for(int i = offset, j = 0; i < size; ++i,j++) {
                 byte b = bytes[i];
-                buf[2 * i + 1] = digits[b & 15];
+                buf[2 * j + 1] = digits[b & 15];
                 b = (byte)(b >>> 4);
-                buf[2 * i + 0] = digits[b & 15];
+                buf[2 * j + 0] = digits[b & 15];
             }
 
             return new String(buf);
@@ -67,10 +84,20 @@ public class HexUtils {
         }
     }
 
+    /**
+     *
+     * @param str
+     * @return
+     */
     public static byte hexStr2Byte(String str) {
         return str != null && str.length() == 1?char2Byte(str.charAt(0)):0;
     }
 
+    /**
+     *
+     * @param ch
+     * @return
+     */
     public static byte char2Byte(char ch) {
         return ch >= 48 && ch <= 57?(byte)(ch - 48):(ch >= 97 && ch <= 102?(byte)(ch - 97 + 10):(ch >= 65 && ch <= 70?(byte)(ch - 65 + 10):0));
     }

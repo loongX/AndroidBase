@@ -23,6 +23,9 @@ public class HexUtilsTest {
         } catch (UnsupportedEncodingException var3) {
             var3.printStackTrace();
         }
+
+ //       System.out.println(HexUtils.bytes2HexStr(bytes, 2, 5));
+ //      System.out.println(HexUtils.hexStr2Bytes("Hello WebSocket World?"));
     }
 
     @After
@@ -31,16 +34,17 @@ public class HexUtilsTest {
 
     @Test
     public void byte2HexStr() throws Exception {
-
+        assertEquals("HexUtils 单字节转16进制字符串", HexUtils.byte2HexStr(bytes[0]), "48");
     }
 
     @Test
     public void bytes2HexStr() throws Exception {
-        assertEquals("HexUtils 字节转16进制", HexUtils.bytes2HexStr(bytes), "48656C6C6F20576562536F636B657420576F726C643F");
+        assertEquals("HexUtils 字节转16进制字符串", HexUtils.bytes2HexStr(bytes), "48656C6C6F20576562536F636B657420576F726C643F");
     }
 
     @Test
     public void bytes2HexStr1() throws Exception {
+        assertEquals("HexUtils 字节转16进制字符串，可控长度", HexUtils.bytes2HexStr(bytes, 2, 5), "6C6C6F2057");
     }
 
     @Test
