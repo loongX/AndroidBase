@@ -54,7 +54,7 @@ for ((i=0; i<address_size; i++)); do
 	git status
 	git add .	
 	git commit -m "$commitMsg"       
-	git push origin master
+	git push #origin master
 done
 
 
