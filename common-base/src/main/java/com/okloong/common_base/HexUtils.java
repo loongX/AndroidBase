@@ -85,8 +85,8 @@ public class HexUtils {
     }
 
     /**
-     *
-     * @param str
+     * 十六进制数转换成十进制数，单字符，超出范围的值为0
+     * @param str string类型
      * @return
      */
     public static byte hexStr2Byte(String str) {
@@ -94,14 +94,22 @@ public class HexUtils {
     }
 
     /**
-     *
-     * @param ch
+     * 48-57:0-9
+     * 65-70:A-F
+     * 97-102:a-f
+     * 十六进制数转换成十进制数，单字符，超出范围的值为0
+     * @param ch char类型
      * @return
      */
     public static byte char2Byte(char ch) {
         return ch >= 48 && ch <= 57?(byte)(ch - 48):(ch >= 97 && ch <= 102?(byte)(ch - 97 + 10):(ch >= 65 && ch <= 70?(byte)(ch - 65 + 10):0));
     }
 
+    /**
+     * 16进制字符串转bcd数组
+     * @param str
+     * @return
+     */
     public static byte[] hexStr2Bytes(String str) {
         if(str != null && !str.equals("")) {
             byte[] bytes = new byte[str.length() / 2];

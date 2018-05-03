@@ -49,14 +49,20 @@ public class HexUtilsTest {
 
     @Test
     public void hexStr2Byte() throws Exception {
+        byte h2b = 0xf;
+        assertEquals("十六进制数转换成十进制数，单字符，超出范围的值为0", HexUtils.hexStr2Byte("F"), h2b);
     }
 
     @Test
     public void char2Byte() throws Exception {
+        byte c2b = 0xa;
+        assertEquals("十六进制数转换成十进制数，单字符，超出范围的值为0", HexUtils.char2Byte("a".charAt(0)), c2b);
     }
 
     @Test
     public void hexStr2Bytes() throws Exception {
+        byte[] h2b = {(byte) 0xab, (byte) 0xcd};
+        assertArrayEquals("16进制字符串转bcd数组", HexUtils.hexStr2Bytes("abcd"), h2b);
     }
 
 }
