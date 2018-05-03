@@ -1,4 +1,6 @@
-package com.okloong.common_base;
+package com.okloong.common;
+
+import com.okloong.commom.HexUtils;
 
 import org.junit.After;
 import org.junit.Before;

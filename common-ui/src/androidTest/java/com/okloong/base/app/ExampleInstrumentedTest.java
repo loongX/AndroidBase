@@ -1,4 +1,4 @@
-package com.okloong.common_base;
+package com.okloong.base.app;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.okloong.common_base.test", appContext.getPackageName());
+        assertEquals("com.okloong.base.app.test", appContext.getPackageName());
     }
 }
