@@ -6,7 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/common-base/common-base.iml" filepath="$PROJECT_DIR$/common-base/common-base.iml" />
       <module fileurl="file://$PROJECT_DIR$/common-ui/common-ui.iml" filepath="$PROJECT_DIR$/common-ui/common-ui.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rxjava2example/rxjava2example.iml" filepath="$PROJECT_DIR$/rxjava2example/rxjava2example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rxjava2/rxjava2.iml" filepath="$PROJECT_DIR$/rxjava2/rxjava2.iml" />
     </modules>
   </component>
 </project>

@@ -1,1 +1,9 @@
-include ':app', ':common-base', ':common-ui', ':rxjava2example'
+
+//include ':app', ':common-base', ':common-ui', ':rxjava2example'
+
+include ':app'
+include ':common-base'
+include ':common-ui'
+
+include ':rxjava2'
+
