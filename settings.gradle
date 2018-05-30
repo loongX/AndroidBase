@@ -7,3 +7,16 @@ include ':common-ui'
 
 include ':rxjava2'
 
+//include  'router/Module2Module/setting.gradle'
+
+//include //'router/Module2Module/:app'//, ':utilslib', ':router', ':shoplib', ':bbslib', ':routerhelper', ':annotation',routerhelper
+include ':Module2Module'
+project (':Module2Module').projectDir = new File('/router/Module2Module')
+include  ':Module2Module:reslib'
+include  ':Module2Module:app'
+include  ':Module2Module:utilslib'
+include  ':Module2Module:router'
+include  ':Module2Module:shoplib'
+include  ':Module2Module:bbslib'
+include  ':Module2Module:routerhelper'
+include  ':Module2Module:annotation'

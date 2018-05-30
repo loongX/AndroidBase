@@ -11,6 +11,8 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/common-base" />
             <option value="$PROJECT_DIR$/common-ui" />
+            <option value="$PROJECT_DIR$/router/Module2Module" />
+            <option value="$PROJECT_DIR$/router/Module2Module/reslib" />
             <option value="$PROJECT_DIR$/rxjava2" />
           </set>
         </option>

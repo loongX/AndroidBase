@@ -3,9 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidBase.iml" filepath="$PROJECT_DIR$/AndroidBase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/router/Module2Module/Module2Module.iml" filepath="$PROJECT_DIR$/router/Module2Module/Module2Module.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/common-base/common-base.iml" filepath="$PROJECT_DIR$/common-base/common-base.iml" />
       <module fileurl="file://$PROJECT_DIR$/common-ui/common-ui.iml" filepath="$PROJECT_DIR$/common-ui/common-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/router/Module2Module/reslib/reslib.iml" filepath="$PROJECT_DIR$/router/Module2Module/reslib/reslib.iml" />
       <module fileurl="file://$PROJECT_DIR$/rxjava2/rxjava2.iml" filepath="$PROJECT_DIR$/rxjava2/rxjava2.iml" />
     </modules>
   </component>
